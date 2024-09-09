@@ -19,9 +19,9 @@ const Tanitim = () => {
             allowFullScreen 
           ></iframe>
         </div>
-        <div className="flex-1 p-4 rounded-lg w-full font-poppins">
-          <h1 className="text-3xl font-bold text-[#0A568C] mb-4">{t("tanitim-baslik")}</h1>
-          <p className="text-[#ffff] font-bold leading-relaxed">
+        <div className="flex-1 p-1 rounded-lg w-full ">
+          <h1 className="text-3xl font-bold text-[#0A568C] mb-1">{t("tanitim-baslik")}</h1>
+          <p className="text-[#ffff] font-poppins leading-relaxed">
             {t("tanitim-icerik")}
           </p>
         </div>

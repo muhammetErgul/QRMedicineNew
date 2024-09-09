@@ -103,7 +103,7 @@ const UserDashboard = () => {
         </div>
 
         {/* Social Media Section */}
-        <div className="p-2 rounded-lg bg-[#ffff] opacity-80 shadow-md transition duration-300 mt-6 absolute bottom-40 right-5 left-5">
+        <div className="p-2 rounded-lg bg-[#ffff] opacity-80 shadow-md transition duration-300 mt-6 absolute bottom-3 right-5 left-5">
           <div className="grid grid-cols-8 md:grid-cols-8 gap-4">
             <a
               href="https://medicinehospital.com.tr/"
