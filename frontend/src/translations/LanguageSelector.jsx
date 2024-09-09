@@ -21,10 +21,10 @@ const LanguageSelector = () => {
   return (
     <div className="relative inline-block w-28 z-50">
       <div
-        className="block w-12 top-0 right-2 absolute  p-3 flex items-center justify-center text-gray-700  cursor-pointer transition-colors"
+        className="block w-12 top-0 right-2 absolute  rounded-full bg-[#15202B] bg-opacity-50  p-3 flex items-center justify-center text-gray-700  cursor-pointer transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <IoLanguage size={25} color="#fff" className="font-bold "/>
+        <IoLanguage size={25} color="#ffff" className="font-bold "/>
        
       </div>
 

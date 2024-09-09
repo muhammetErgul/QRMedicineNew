@@ -12,48 +12,73 @@ const UserDashboard = () => {
           {/* Updated gap and card styling */}
           <Link
             to="/anketler"
-            className="flex gap-2 flex-col items-center p-4  hover:scale-105  transition duration-300 "
+            className="flex gap-2 flex-col items-center p-4   "
           >
             <img
               src="./call-center.png"
-              className="bg-transparent text-center"  
+              className="bg-transparent text-center"
               alt=""
               style={{ filter: "invert(100%)" }}
               width={"70px"}
             />
-            <span className="text-lg font-semibold text-[#ffff]">{t("survey-page")}</span>
+            <span className="text-lg font-semibold text-[#ffff]">
+              {t("survey-page")}
+            </span>
           </Link>
 
-          <Link
-            to="/tanitim"
-            className="flex gap-2 flex-col items-center p-4 hover:scale-105 transition duration-300 "
-          >
-            <img src="./hospital-building.png" alt="" width={"70px"} style={{ filter: "invert(100%)" }} />
-            <span className="text-lg font-semibold text-[#ffff]">Hastanemiz</span>
+          <Link to="/tanitim" className="flex gap-2 flex-col items-center p-4 ">
+            <img
+              src="./hospital-building.png"
+              alt=""
+              width={"70px"}
+              style={{ filter: "invert(100%)" }}
+            />
+            <span className="text-lg font-semibold text-[#ffff]">
+              Hastanemiz
+            </span>
           </Link>
 
           <a
             href="https://randevu.medicinehospital.com.tr/appointment.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-2 flex-col items-center p-4 hover:scale-105 transition duration-300 "
+            className="flex gap-2 flex-col items-center p-4 "
           >
-            <img src="./appointment.png" alt="" width={"70px"} style={{ filter: "invert(100%)" }} />
-            <span className="text-lg font-semibold text-[#ffff]">{t("appointment")}</span>
+            <img
+              src="./appointment.png"
+              alt=""
+              width={"70px"}
+              style={{ filter: "invert(100%)" }}
+            />
+            <span className="text-lg font-semibold text-[#ffff]">
+              {t("appointment")}
+            </span>
           </a>
 
           <a
             href="https://tetkik.medicinehospital.com.tr/patient_information.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-2 flex-col items-center p-4  hover:scale-105 transition duration-300 "
+            className="flex gap-2 flex-col items-center p-4  "
           >
-            <img src="./doctor1.png" alt="" width={"70px"} style={{ filter: "invert(100%)" }} />
-            <span className="text-lg font-semibold text-[#ffff]">{t("sonuc")}</span>
+            <img
+              src="./doctor1.png"
+              alt=""
+              width={"70px"}
+              style={{ filter: "invert(100%)" }}
+            />
+            <span className="text-lg font-semibold text-[#ffff]">
+              {t("sonuc")}
+            </span>
           </a>
 
-          <Link to="/info" className="flex gap-2 flex-col items-center p-4 hover:scale-105 transition duration-300">
-            <img src="./info.png" alt="" width={"70px"}  style={{ filter: "invert(100%)" }}/>
+          <Link to="/info" className="flex gap-2 flex-col items-center p-4">
+            <img
+              src="./info.png"
+              alt=""
+              width={"70px"}
+              style={{ filter: "invert(100%)" }}
+            />
             <span className="text-lg font-semibold text-[#ffff]">
               {t("info")}
             </span>
@@ -63,15 +88,22 @@ const UserDashboard = () => {
             href="https://menu.myqrcodemenu.com/menu/foodz-cafe--df8995"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-2 flex-col items-center p-4  hover:scale-105 transition duration-300 "
+            className="flex gap-2 flex-col items-center p-4  "
           >
-            <img src="./shopping.png" alt="" width={"70px"} style={{ filter: "invert(100%)" }}  />
-            <span className="text-lg font-semibold text-[#ffff]">{t("order-screen")}</span>
+            <img
+              src="./shopping.png"
+              alt=""
+              width={"70px"}
+              style={{ filter: "invert(100%)" }}
+            />
+            <span className="text-lg font-semibold text-[#ffff]">
+              {t("order-screen")}
+            </span>
           </a>
         </div>
 
         {/* Social Media Section */}
-        <div className="p-2 rounded-lg bg-gray-300 opacity-90 shadow-md transition duration-300 mt-6 absolute bottom-40 right-5 left-5">
+        <div className="p-2 rounded-lg bg-[#ffff] opacity-80 shadow-md transition duration-300 mt-6 absolute bottom-40 right-5 left-5">
           <div className="grid grid-cols-8 md:grid-cols-8 gap-4">
             <a
               href="https://medicinehospital.com.tr/"

@@ -20,7 +20,7 @@ function Header() {
             className="mb-2"
             alt="Atlas Üniversitesi Logo"
           />
-          <h1 className="text-2xl md:text-2xl  text-center font-poppins flex flex-col">
+          <h1 className="text-2xl md:text-2xl  text-center font-libre flex flex-col">
             ATLAS ÜNİVERSİTESİ
             <span> HASTANESİ</span>
           </h1>
