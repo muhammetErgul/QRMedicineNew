@@ -31,7 +31,9 @@ const UserDashboard = () => {
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-sm font-semibold text-[#ffff]">{t("about-us")}</span>
+            <span className="text-sm font-semibold text-[#ffff]">
+              {t("about-us")}
+            </span>
           </Link>
 
           <a
@@ -103,113 +105,6 @@ const UserDashboard = () => {
         </div>
 
         {/* Social Media Section */}
-        {/* <div className="fixed bottom-20 right-4 left-4 p-2 rounded-lg bg-[#ffff] opacity-90  shadow-md transition duration-300 z-50 mb-4">
-          <div className="grid grid-cols-8 md:grid-cols-8 gap-3 ">
-            <a
-              href="https://medicinehospital.com.tr/"
-              className="text-2xl "
-              target="_blank"
-              rel="noopener noreferrer"
-
-            >
-              <img
-                src="./internet.png"
-                alt="Internet"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/medicinehospital.com.tr"
-              className=" text-2xl transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                
-                src="./facebook.png"
-                alt="Facebook"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/medicinehospital/"
-              className=" text-2xl transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./instagram.png"
-                alt="Instagram"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="https://x.com/medicinehospital"
-              className=" text-2xl transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./x.png"
-                alt="X"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/@MedicineHospitalTurkey"
-              className=" text-2xl transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./youtube.png"
-                alt="YouTube"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.pratikbilisim.medicine"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./google_play.png"
-                alt="Google Play Store"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="https://apps.apple.com/tr/app/medicine-hospital-mobil/id6471742134?l=tr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./apple_app.png"
-                alt="App Store"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-            <a
-              href="tel:4440205"
-              className="flex items-center justify-center  transition-colors duration-300"
-            >
-              <img
-                src="./iletişim.png"
-                alt="Iletisim"
-                className="w-10 h-10 object-contain"
-                style={{ imageRendering: "auto" }}
-              />
-            </a>
-          </div>
-        </div> */}
-
         <div className="relative top-20  fixed bottom-0 right-0 left-0  p-3 rounded-lg bg-[#fefefe] bg-opacity-80 shadow-md transition duration-300">
           <div className="grid grid-cols-8 gap-4 ">
             <a

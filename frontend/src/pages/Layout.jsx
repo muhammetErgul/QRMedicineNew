@@ -5,7 +5,7 @@ import AutoSignOut from "../components/AutoSignOut";
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative flex flex-col min-h-screen">
+    <div className="relative flex flex-col ">
       {/* Arka plan resmini daha yukarı taşımak ve parallax etkisi vermek */}
       <div 
         className="absolute inset-0 bg-[url('/Mobil.jpg')] bg-cover bg-top  z-0"
