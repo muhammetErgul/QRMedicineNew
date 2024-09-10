@@ -5,7 +5,7 @@ const UserDashboard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative min-h-screen flex flex-col mt-8">
+    <div className="relative min-h-screen flex flex-col mt-5">
       {/* Main Content */}
       <div className="relative flex-grow container mx-auto px-5 ">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center font-libre">
@@ -108,8 +108,8 @@ const UserDashboard = () => {
         </div>
 
         {/* Social Media Section */}
-        <div className="p-2 rounded-lg bg-[#ffff] opacity-80 shadow-md transition duration-300 mt-6 absolute bottom-3 right-5 left-5">
-          <div className="grid grid-cols-8 md:grid-cols-8 gap-4">
+        <div className="p-3 rounded-lg bg-[#ffff] opacity-90 shadow-md transition duration-300 mt-10 absolute  top-1/2 right-4 left-4">
+          <div className="grid grid-cols-8 md:grid-cols-8 gap-3 z-10">
             <a
               href="https://medicinehospital.com.tr/"
               className="hover:text-gray-400 text-2xl transition-colors duration-300"

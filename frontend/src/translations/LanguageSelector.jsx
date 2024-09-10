@@ -21,11 +21,11 @@ const LanguageSelector = () => {
   return (
     <div className="relative inline-block w-28 z-50">
       <div
-        className="block w-11 top-0 right-2 absolute  rounded-full bg-[#15202B] bg-opacity-50  p-3 flex items-center justify-center text-gray-700  cursor-pointer transition-colors"
+        className="block top-0  right-2 absolute  rounded-full   p-3 flex items-center justify-center text-gray-700  cursor-pointer transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <IoLanguage size={18} color="#ffff" className="font-bold "/>
-       
+        {/* <IoLanguage size={18} color="#ffff" className="font-bold "/> */}
+        <img src="./translate.png" alt="translate" width={"32px"} height={"32px"} />
       </div>
 
       <AnimatePresence>
