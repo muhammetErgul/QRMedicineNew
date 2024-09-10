@@ -5,7 +5,7 @@ const UserDashboard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative  flex flex-col mt-5 ">
+    <div className="relative  flex flex-col mt-5  ">
       {/* Main Content */}
       <div className="relative flex-grow container mx-auto px-5 ">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center font-libre">
