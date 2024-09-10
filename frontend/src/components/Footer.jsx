@@ -5,7 +5,7 @@ import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <footer className="bg-[#0A568C] text-white py-2 px-6 w-full">
+    <footer className="bg-[#0A568C] text-white py-2 px-6 w-full fixed bottom-0">
       <div className="mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-start">
         
         {/* Telefon ve Email Bilgileri - Yan Yana ve Sabit */}
