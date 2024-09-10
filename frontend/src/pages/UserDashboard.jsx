@@ -10,10 +10,7 @@ const UserDashboard = () => {
       <div className="relative flex-grow container mx-auto px-5 ">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center font-libre">
           {/* Updated gap and card styling */}
-          <Link
-            to="/anketler"
-            className="flex flex-col items-center gap-2"
-          >
+          <Link to="/anketler" className="flex flex-col items-center gap-2">
             <img
               src="./call-center.png"
               className="bg-transparent text-center border rounded-md p-1 border-black"
@@ -34,9 +31,7 @@ const UserDashboard = () => {
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-md font-semibold text-[#ffff]">
-              Biz
-            </span>
+            <span className="text-md font-semibold text-[#ffff]">Biz</span>
           </Link>
 
           <a
@@ -108,67 +103,109 @@ const UserDashboard = () => {
         </div>
 
         {/* Social Media Section */}
-        <div className="p-3 rounded-lg bg-[#ffff] opacity-90 shadow-md transition duration-300 mt-10 absolute  top-1/2 right-4 left-4">
-          <div className="grid grid-cols-8 md:grid-cols-8 gap-3 z-10">
+        <div className="fixed bottom-20 right-4 left-4 p-3 rounded-lg bg-[#ffff] opacity-90  shadow-md transition duration-300 z-50 mb-4">
+          <div className="grid grid-cols-8 md:grid-cols-8 gap-3 ">
             <a
               href="https://medicinehospital.com.tr/"
-              className="hover:text-gray-400 text-2xl transition-colors duration-300"
+              className="text-2xl transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
+
             >
-              <img src="./internet.png" alt="" />
+              <img
+                src="./internet.png"
+                alt="Internet"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="https://www.facebook.com/medicinehospital.com.tr"
-              className="hover:text-blue-700 text-2xl transition-colors duration-300"
+              className=" text-2xl transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./facebook.png" alt="" />
+              <img
+                
+                src="./facebook.png"
+                alt="Facebook"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="https://www.instagram.com/medicinehospital/"
-              className="hover:text-pink-300 text-2xl transition-colors duration-300"
+              className=" text-2xl transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./instagram.png" alt="" />
+              <img
+                src="./instagram.png"
+                alt="Instagram"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="https://x.com/medicinehospital"
-              className="hover:text-blue-300 text-2xl transition-colors duration-300"
+              className=" text-2xl transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./x.png" alt="" />
+              <img
+                src="./x.png"
+                alt="X"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="https://www.youtube.com/@MedicineHospitalTurkey"
-              className="hover:text-red-300 text-2xl transition-colors duration-300"
+              className=" text-2xl transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./youtube.png" alt="" />
+              <img
+                src="./youtube.png"
+                alt="YouTube"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.pratikbilisim.medicine"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./google_play.png" alt="Google Play Store" />
+              <img
+                src="./google_play.png"
+                alt="Google Play Store"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="https://apps.apple.com/tr/app/medicine-hospital-mobil/id6471742134?l=tr"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./apple_app.png" alt="App Store" />
+              <img
+                src="./apple_app.png"
+                alt="App Store"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
             <a
               href="tel:4440205"
-              className="flex items-center justify-center hover:text-gray-400 transition-colors duration-300"
+              className="flex items-center justify-center  transition-colors duration-300"
             >
-              <img src="./iletişim.png" alt="" />
+              <img
+                src="./iletişim.png"
+                alt="Iletisim"
+                className="w-10 h-10 object-contain"
+                style={{ imageRendering: "auto" }}
+              />
             </a>
           </div>
         </div>
@@ -178,4 +215,3 @@ const UserDashboard = () => {
 };
 
 export default UserDashboard;
-

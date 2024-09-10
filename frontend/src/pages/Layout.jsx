@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <div className="relative flex flex-col min-h-screen">
       {/* Arka plan resmini daha yukarı taşımak ve parallax etkisi vermek */}
       <div 
-        className="absolute inset-0 bg-[url('/bg-34.png')] bg-cover bg-top  z-0"
+        className="absolute inset-0 bg-[url('/bg-34.png')] bg-cover bg-top z-0"
         style={{ backgroundAttachment: 'fixed' }} 
       ></div>
       {/* İçerik ve şeffaf arkaplan overlay */}
