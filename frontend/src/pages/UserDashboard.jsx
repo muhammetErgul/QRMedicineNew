@@ -5,36 +5,37 @@ const UserDashboard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative min-h-screen flex flex-col ">
+    <div className="relative min-h-screen flex flex-col mt-8">
       {/* Main Content */}
-      <div className="relative flex-grow container mx-auto px-4 py-2 ">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 text-center mt-4 font-poppins">
+      <div className="relative flex-grow container mx-auto px-5 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center font-libre">
           {/* Updated gap and card styling */}
           <Link
             to="/anketler"
-            className="flex gap-2 flex-col items-center p-4   "
+            className="flex flex-col items-center gap-2"
           >
             <img
               src="./call-center.png"
-              className="bg-transparent text-center"
+              className="bg-transparent text-center border rounded-md p-1 border-black"
               alt=""
               style={{ filter: "invert(100%)" }}
-              width={"70px"}
+              width={"60px"}
             />
-            <span className="text-lg font-semibold text-[#ffff]">
+            <span className="text-md font-semibold text-[#ffff]">
               {t("survey-page")}
             </span>
           </Link>
 
-          <Link to="/tanitim" className="flex gap-2 flex-col items-center p-4 ">
+          <Link to="/tanitim" className="flex flex-col items-center gap-2">
             <img
               src="./hospital-building.png"
               alt=""
-              width={"70px"}
+              width={"60px"}
               style={{ filter: "invert(100%)" }}
+              className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-lg font-semibold text-[#ffff]">
-              Hastanemiz
+            <span className="text-md font-semibold text-[#ffff]">
+              Biz
             </span>
           </Link>
 
@@ -42,15 +43,16 @@ const UserDashboard = () => {
             href="https://randevu.medicinehospital.com.tr/appointment.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-2 flex-col items-center p-4 "
+            className="flex flex-col items-center gap-2"
           >
             <img
               src="./appointment.png"
               alt=""
-              width={"70px"}
+              width={"60px"}
               style={{ filter: "invert(100%)" }}
+              className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-lg font-semibold text-[#ffff]">
+            <span className="text-md font-semibold text-[#ffff]">
               {t("appointment")}
             </span>
           </a>
@@ -59,27 +61,29 @@ const UserDashboard = () => {
             href="https://tetkik.medicinehospital.com.tr/patient_information.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-2 flex-col items-center p-4  "
+            className="flex flex-col items-center gap-2"
           >
             <img
               src="./doctor1.png"
               alt=""
-              width={"70px"}
+              width={"60px"}
               style={{ filter: "invert(100%)" }}
+              className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-lg font-semibold text-[#ffff]">
+            <span className="text-md font-semibold text-[#ffff]">
               {t("sonuc")}
             </span>
           </a>
 
-          <Link to="/info" className="flex gap-2 flex-col items-center p-4">
+          <Link to="/info" className="flex flex-col items-center gap-2">
             <img
               src="./info.png"
               alt=""
-              width={"70px"}
+              width={"60px"}
               style={{ filter: "invert(100%)" }}
+              className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-lg font-semibold text-[#ffff]">
+            <span className="text-md font-semibold text-[#ffff]">
               {t("info")}
             </span>
           </Link>
@@ -88,15 +92,16 @@ const UserDashboard = () => {
             href="https://menu.myqrcodemenu.com/menu/foodz-cafe--df8995"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex gap-2 flex-col items-center p-4  "
+            className="flex flex-col items-center gap-2"
           >
             <img
               src="./shopping.png"
               alt=""
-              width={"70px"}
+              width={"60px"}
               style={{ filter: "invert(100%)" }}
+              className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-lg font-semibold text-[#ffff]">
+            <span className="text-md font-semibold text-[#ffff]">
               {t("order-screen")}
             </span>
           </a>
@@ -173,3 +178,4 @@ const UserDashboard = () => {
 };
 
 export default UserDashboard;
+
