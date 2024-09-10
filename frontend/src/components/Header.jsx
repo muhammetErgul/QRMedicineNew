@@ -14,7 +14,7 @@ function Header() {
       <div className="flex flex-col items-center justify-center">
         <Link to="/" className="flex flex-col items-center">
           <img
-            width={300}
+            width={340}
             src="./header1.png"
           
             alt="Atlas Üniversitesi Logo"

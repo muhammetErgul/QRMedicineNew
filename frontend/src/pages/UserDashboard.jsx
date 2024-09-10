@@ -16,9 +16,9 @@ const UserDashboard = () => {
               className="bg-transparent text-center border rounded-md p-1 border-black"
               alt=""
               style={{ filter: "invert(100%)" }}
-              width={"60px"}
+              width={"50px"}
             />
-            <span className="text-md font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-[#ffff]">
               {t("survey-page")}
             </span>
           </Link>
@@ -27,11 +27,11 @@ const UserDashboard = () => {
             <img
               src="./hospital-building.png"
               alt=""
-              width={"60px"}
+              width={"50px"}
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-md font-semibold text-[#ffff]">Biz</span>
+            <span className="text-sm font-semibold text-[#ffff]">Biz</span>
           </Link>
 
           <a
@@ -43,11 +43,11 @@ const UserDashboard = () => {
             <img
               src="./appointment.png"
               alt=""
-              width={"60px"}
+              width={"50px"}
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-md font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-[#ffff]">
               {t("appointment")}
             </span>
           </a>
@@ -61,11 +61,11 @@ const UserDashboard = () => {
             <img
               src="./doctor1.png"
               alt=""
-              width={"60px"}
+              width={"50px"}
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-md font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-[#ffff]">
               {t("sonuc")}
             </span>
           </a>
@@ -74,11 +74,11 @@ const UserDashboard = () => {
             <img
               src="./info.png"
               alt=""
-              width={"60px"}
+              width={"50px"}
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-md font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-[#ffff]">
               {t("info")}
             </span>
           </Link>
@@ -92,11 +92,11 @@ const UserDashboard = () => {
             <img
               src="./shopping.png"
               alt=""
-              width={"60px"}
+              width={"50px"}
               style={{ filter: "invert(100%)" }}
               className="bg-transparent text-center border rounded-md p-1 border-black"
             />
-            <span className="text-md font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-[#ffff]">
               {t("order-screen")}
             </span>
           </a>
