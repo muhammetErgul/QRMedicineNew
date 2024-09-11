@@ -5,7 +5,7 @@ const UserDashboard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative  flex flex-col mt-5  ">
+    <div className="relative   flex flex-col mt-3 ">
       {/* Main Content */}
       <div className="relative flex-grow container mx-auto px-5 ">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center font-libre">
@@ -105,7 +105,7 @@ const UserDashboard = () => {
         </div>
 
         {/* Social Media Section */}
-        <div className="relative top-20  fixed bottom-0 right-0 left-0  p-3 rounded-lg bg-[#fefefe] bg-opacity-80 shadow-md transition duration-300">
+        {/* <div className="relative    right-0 left-0  p-3 rounded-lg bg-[#fefefe] bg-opacity-80 shadow-md transition duration-300">
           <div className="grid grid-cols-8 gap-4 ">
             <a
               href="https://medicinehospital.com.tr/"
@@ -168,7 +168,7 @@ const UserDashboard = () => {
               <img src="./iletişim.png" alt="Iletisim" />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

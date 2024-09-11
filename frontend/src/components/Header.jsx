@@ -1,13 +1,108 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageSelector from "../translations/LanguageSelector";
 
 function Header() {
+  // Sosyal medya menüsünü açıp kapatmak için state
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Menü açma/kapatma fonksiyonu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className=" text-white pt-2 px-4 md:px-8 flex flex-col items-center justify-center relative font-poppins">
+    <header className="text-white pt-2 px-4 md:px-8 flex flex-col items-center justify-center relative font-poppins">
       {/* Dil seçici */}
       <div className="absolute top-1 right-0">
         <LanguageSelector />
+      </div>
+
+      {/* Sosyal Medya Menü Butonu */}
+      <div className="absolute top-7 left-1">
+        <button
+          className="p-2  rounded-full focus:outline-none"
+          onClick={toggleMenu}
+        >
+          {/* Sosyal medya ikonu */}
+          <img src="./social-media.png" alt="Sosyal Medya" className="w-8 h-8" style={{ filter: "invert(100%)" }} />
+        </button>
+
+        {/* Sosyal Medya Linkleri */}
+        <div
+          className={`transition-all duration-500 ease-in-out ${
+            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          } overflow-hidden`}
+        >
+          <div className="bg-white bg-opacity-80 p-2 rounded-lg shadow-md mt-2">
+            <div className="grid grid-cols-1 gap-2 ">
+              <a
+                href="https://medicinehospital.com.tr/"
+                className="hover:text-gray-400 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./internet.png" alt="Internet" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.facebook.com/medicinehospital.com.tr"
+                className="hover:text-blue-700 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./facebook.png" alt="Facebook" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/medicinehospital/"
+                className="hover:text-pink-300 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./instagram.png" alt="Instagram" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://x.com/medicinehospital"
+                className="hover:text-blue-300 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./x.png" alt="X" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.youtube.com/@MedicineHospitalTurkey"
+                className="hover:text-red-300 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./youtube.png" alt="YouTube" className="w-6 h-6" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.pratikbilisim.medicine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./google_play.png"
+                  alt="Google Play Store"
+                  className="w-6 h-6"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/tr/app/medicine-hospital-mobil/id6471742134?l=tr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./apple_app.png" alt="App Store" className="w-6 h-6" />
+              </a>
+              <a
+                href="tel:4440205"
+                className="hover:text-gray-400 transition-colors duration-300"
+              >
+                <img src="./iletişim.png" alt="Iletisim" className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Logo ve başlık */}
@@ -16,13 +111,8 @@ function Header() {
           <img
             width={340}
             src="./header1.png"
-          
             alt="Atlas Üniversitesi Logo"
           />
-          {/* <h1 className="text-2xl md:text-2xl  text-center  font-libre font-bold flex flex-col ">
-            ATLAS ŪNİVERSİTESİ
-            <span> HASTANESİ</span>
-          </h1> */}
         </Link>
       </div>
     </header>
