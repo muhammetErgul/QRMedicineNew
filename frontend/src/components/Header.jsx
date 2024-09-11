@@ -107,13 +107,15 @@ function Header() {
 
       {/* Logo ve başlık */}
       <div className="flex flex-col items-center justify-center">
-        <Link to="/" className="flex flex-col items-center">
+        <Link to="/" className="flex flex-col gap-2 items-center">
           <img
-            width={340}
-            src="./header1.png"
+            className="w-20 h-20  "
+            src="./Atlas-Beyaz-zeminli.png"
             alt="Atlas Üniversitesi Logo"
           />
+          <img src="./Atlas.png" alt=""  />
         </Link>
+        
       </div>
     </header>
   );
