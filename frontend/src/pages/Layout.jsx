@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       ></div>
 
       {/* İçerik ve şeffaf arkaplan overlay */}
-      <div className="relative flex flex-col flex-grow z-10 bg-black/10">
+      <div className="relative flex flex-col flex-grow z-10 bg-black/5">
         <Header />
         <AutoSignOut />
         <main className="flex-grow z-10">

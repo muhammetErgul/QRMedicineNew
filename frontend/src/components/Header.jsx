@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageSelector from "../translations/LanguageSelector";
-import socialPng from "../assets/social.png";
+//import socialPng from "../assets/social.png";
+import appStore from "../assets/appstore.png";
+import googlePlay from "../assets/google-play.png";
+import instagram from '../assets/instagram.png';
+import twitter from '../assets/twitter.png';
+import facebook from '../assets/facebook.png';
+import youTube from '../assets/youtube.png';
+import socialMarketing from '../assets/social-marketing.png';
+import call from '../assets/phone-call.png';
+import web from '../assets/web-domain.png';
 function Header() {
   // Sosyal medya menüsünü açıp kapatmak için state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,22 +28,22 @@ function Header() {
       </div>
 
       {/* Sosyal Medya Menü Butonu */}
-      <div className="absolute top-5 left-1 ">
+      <div className="absolute top-5 left-1 z-50">
         <button
           className="p-2  rounded-full focus:outline-none"
           onClick={toggleMenu}
         >
           {/* Sosyal medya ikonu */}
-          <img src={socialPng} alt="Sosyal Medya" className="w-9 h-9  " style={{ filter: "invert(100%)" }} />
+          <img src={socialMarketing} alt="Sosyal Medya" className="w-9 h-9  " style={{ filter: "invert(100%)" }} />
         </button>
 
         {/* Sosyal Medya Linkleri */}
         <div
-          className={`transition-all duration-500 ease-in-out ${
+          className={`transition-all duration-500 ease-in-out  ${
             isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           } overflow-hidden`}
         >
-          <div className="bg-white bg-opacity-80 py-2 px-3   rounded-lg shadow-md mt-2">
+          <div className="bg-white bg-opacity-80 py-2 px-3   rounded-lg shadow-md mt-2 ">
             <div className="grid grid-cols-1 gap-2">
               <a
                 href="https://medicinehospital.com.tr/"
@@ -42,7 +51,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./internet.png" alt="Internet" className="w-6 h-6" />
+                <img src={web} alt="Internet" className="w-6 h-6" />
               </a>
               <a
                 href="https://www.facebook.com/medicinehospital.com.tr"
@@ -50,7 +59,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./facebook.png" alt="Facebook" className="w-6 h-6" />
+                <img src={facebook} alt="Facebook" className="w-6 h-6" />
               </a>
               <a
                 href="https://www.instagram.com/medicinehospital/"
@@ -58,7 +67,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./instagram.png" alt="Instagram" className="w-6 h-6" />
+                <img src={instagram} alt="Instagram" className="w-6 h-6" />
               </a>
               <a
                 href="https://x.com/medicinehospital"
@@ -66,7 +75,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./x.png" alt="X" className="w-6 h-6" />
+                <img src={twitter} alt="X" className="w-6 h-6" />
               </a>
               <a
                 href="https://www.youtube.com/@MedicineHospitalTurkey"
@@ -74,7 +83,7 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./youtube.png" alt="YouTube" className="w-6 h-6" />
+                <img src={youTube} alt="YouTube" className="w-6 h-6" />
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.pratikbilisim.medicine"
@@ -82,7 +91,7 @@ function Header() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./google_play.png"
+                  src={googlePlay}
                   alt="Google Play Store"
                   className="w-6 h-6"
                 />
@@ -92,13 +101,13 @@ function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="./apple_app.png" alt="App Store" className="w-6 h-6" />
+                <img src={appStore} alt="App Store" className="w-6 h-6" />
               </a>
               <a
                 href="tel:4440205"
                 className="hover:text-gray-400 transition-colors duration-300"
               >
-                <img src="./iletişim.png" alt="Iletisim" className="w-6 h-6" />
+                <img src={call} alt="Iletisim" className="w-6 h-6" />
               </a>
             </div>
           </div>
@@ -113,7 +122,7 @@ function Header() {
             src="./Atlas-Beyaz-zeminli.png"
             alt="Atlas Üniversitesi Logo"
           />
-          <img src="./Atlas.png" alt=""  />
+          <img src="./Atlas.png" alt=""   /> 
         </Link>
         
       </div>
