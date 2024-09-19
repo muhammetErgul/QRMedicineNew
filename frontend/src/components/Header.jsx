@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageSelector from "../translations/LanguageSelector";
-
+import socialPng from "../assets/social.png";
 function Header() {
   // Sosyal medya menüsünü açıp kapatmak için state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +19,13 @@ function Header() {
       </div>
 
       {/* Sosyal Medya Menü Butonu */}
-      <div className="absolute top-7 left-1">
+      <div className="absolute top-5 left-1 ">
         <button
           className="p-2  rounded-full focus:outline-none"
           onClick={toggleMenu}
         >
           {/* Sosyal medya ikonu */}
-          <img src="./social-media.png" alt="Sosyal Medya" className="w-8 h-8" style={{ filter: "invert(100%)" }} />
+          <img src={socialPng} alt="Sosyal Medya" className="w-9 h-9  " style={{ filter: "invert(100%)" }} />
         </button>
 
         {/* Sosyal Medya Linkleri */}
@@ -34,8 +34,8 @@ function Header() {
             isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           } overflow-hidden`}
         >
-          <div className="bg-white bg-opacity-80 p-2 rounded-lg shadow-md mt-2">
-            <div className="grid grid-cols-1 gap-2 ">
+          <div className="bg-white bg-opacity-80 py-2 px-3   rounded-lg shadow-md mt-2">
+            <div className="grid grid-cols-1 gap-2">
               <a
                 href="https://medicinehospital.com.tr/"
                 className="hover:text-gray-400 transition-colors duration-300"

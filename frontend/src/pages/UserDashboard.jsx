@@ -1,37 +1,39 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import anketPng from '../assets/anket.png';
+import aboutPng from '../assets/hospital.png';
+import bilgiPng from '../assets/bilgi.png';
+import randevuPng from '../assets/randevu.png';
+import siparisPng from '../assets/siparis.png';
+import sonucPng from '../assets/sonuc.png';
 
 const UserDashboard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative   flex flex-col mt-3 ">
+    <div className="relative flex flex-col mt-3">
       {/* Main Content */}
-      <div className="relative flex-grow container mx-auto px-5 ">
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center font-libre">
-          {/* Updated gap and card styling */}
-          <Link to="/anketler" className="flex flex-col items-center gap-2">
+      <div className="relative flex-grow container mx-auto px-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center font-libre">
+          {/* Sabit boyutlu kartlar */}
+          <Link to="/anketler" className="flex flex-col items-center justify-center w-28 h-24 gap-2 p-3 bg-white bg-opacity-60 rounded-lg shadow-lg  transition duration-300">
             <img
-              src="./call-center.png"
-              className="bg-transparent text-center border rounded-md p-1 border-black"
-              alt=""
-              style={{ filter: "invert(100%)" }}
-              width={"50px"}
+              src={anketPng}
+              className="w-12 h-12 object-contain ml-1 "
+              alt="Anket"
             />
-            <span className="text-sm font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-gray-800">
               {t("survey-page")}
             </span>
           </Link>
 
-          <Link to="/tanitim" className="flex flex-col items-center gap-2">
+          <Link to="/tanitim" className="flex flex-col items-center justify-center w-28 h-24 gap-2 p-3 bg-white bg-opacity-60 rounded-lg shadow-lg transition duration-300">
             <img
-              src="./hospital-building.png"
-              alt=""
-              width={"50px"}
-              style={{ filter: "invert(100%)" }}
-              className="bg-transparent text-center border rounded-md p-1 border-black"
+              src={aboutPng}
+              alt="Tanıtım"
+              className="w-12 h-12 object-contain"
             />
-            <span className="text-sm font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-gray-800">
               {t("about-us")}
             </span>
           </Link>
@@ -40,16 +42,14 @@ const UserDashboard = () => {
             href="https://randevu.medicinehospital.com.tr/appointment.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center gap-2"
+            className="flex flex-col items-center justify-center w-28 h-24 gap-2 p-3 bg-white bg-opacity-60 rounded-lg shadow-lg transition duration-300"
           >
             <img
-              src="./appointment.png"
-              alt=""
-              width={"50px"}
-              style={{ filter: "invert(100%)" }}
-              className="bg-transparent text-center border rounded-md p-1 border-black"
+              src={randevuPng}
+              alt="Randevu"
+              className="w-12 h-12 object-contain"
             />
-            <span className="text-sm font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold  text-gray-800">
               {t("appointment")}
             </span>
           </a>
@@ -58,29 +58,25 @@ const UserDashboard = () => {
             href="https://tetkik.medicinehospital.com.tr/patient_information.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center gap-2"
+            className="flex flex-col items-center justify-center w-28 h-24 gap-2 p-3 bg-white bg-opacity-60 rounded-lg shadow-lg  transition duration-300"
           >
             <img
-              src="./doctor1.png"
-              alt=""
-              width={"50px"}
-              style={{ filter: "invert(100%)" }}
-              className="bg-transparent text-center border rounded-md p-1 border-black"
+              src={sonucPng}
+              alt="Sonuç"
+              className="w-12 h-12 object-contain"
             />
-            <span className="text-sm font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-gray-800">
               {t("sonuc")}
             </span>
           </a>
 
-          <Link to="/info" className="flex flex-col items-center gap-2">
+          <Link to="/info" className="flex flex-col items-center justify-center w-28 h-24 gap-2 p-3 bg-white bg-opacity-60 rounded-lg shadow-lg  transition duration-300">
             <img
-              src="./info.png"
-              alt=""
-              width={"50px"}
-              style={{ filter: "invert(100%)" }}
-              className="bg-transparent text-center border rounded-md p-1 border-black"
+              src={bilgiPng}
+              alt="Bilgi"
+              className="w-12 h-12 object-contain"
             />
-            <span className="text-sm font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-gray-800">
               {t("info")}
             </span>
           </Link>
@@ -89,86 +85,18 @@ const UserDashboard = () => {
             href="https://menu.myqrcodemenu.com/menu/foodz-cafe--df8995"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center gap-2"
+            className="flex flex-col items-center justify-center w-28 h-24 gap-2 p-3 bg-white bg-opacity-60 rounded-lg shadow-lg  transition duration-300"
           >
             <img
-              src="./shopping.png"
-              alt=""
-              width={"50px"}
-              style={{ filter: "invert(100%)" }}
-              className="bg-transparent text-center border rounded-md p-1 border-black"
+              src={siparisPng}
+              alt="Sipariş"
+              className="w-12 h-12 object-contain"
             />
-            <span className="text-sm font-semibold text-[#ffff]">
+            <span className="text-sm font-semibold text-gray-800">
               {t("order-screen")}
             </span>
           </a>
         </div>
-
-        {/* Social Media Section */}
-        {/* <div className="relative    right-0 left-0  p-3 rounded-lg bg-[#fefefe] bg-opacity-80 shadow-md transition duration-300">
-          <div className="grid grid-cols-8 gap-4 ">
-            <a
-              href="https://medicinehospital.com.tr/"
-              className="hover:text-gray-400 text-2xl text-gray-600 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./internet.png" alt="Internet" />
-            </a>
-            <a
-              href="https://www.facebook.com/medicinehospital.com.tr"
-              className="hover:text-blue-700 text-2xl text-blue-600 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./facebook.png" alt="Facebook" />
-            </a>
-            <a
-              href="https://www.instagram.com/medicinehospital/"
-              className="hover:text-pink-300 text-2xl text-pink-600 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./instagram.png" alt="Instagram" />
-            </a>
-            <a
-              href="https://x.com/medicinehospital"
-              className="hover:text-blue-300 text-2xl text-blue-500 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./x.png" alt="X" />
-            </a>
-            <a
-              href="https://www.youtube.com/@MedicineHospitalTurkey"
-              className="hover:text-red-300 text-2xl text-red-600 transition-colors duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./youtube.png" alt="YouTube" />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.pratikbilisim.medicine"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./google_play.png" alt="Google Play Store" />
-            </a>
-            <a
-              href="https://apps.apple.com/tr/app/medicine-hospital-mobil/id6471742134?l=tr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="./apple_app.png" alt="App Store" />
-            </a>
-            <a
-              href="tel:4440205"
-              className="flex items-center justify-center hover:text-gray-400 text-2xl text-gray-500 transition-colors duration-300"
-            >
-              <img src="./iletişim.png" alt="Iletisim" />
-            </a>
-          </div>
-        </div> */}
       </div>
     </div>
   );
