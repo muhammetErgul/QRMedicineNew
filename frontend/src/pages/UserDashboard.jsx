@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import anketPng from '../assets/anket.png';
-import aboutPng from '../assets/hospital.png';
+import aboutPng from '../assets/hastane.png';
 import bilgiPng from '../assets/bilgi.png';
 import randevuPng from '../assets/randevu.png';
 import siparisPng from '../assets/siparis.png';
 import sonucPng from '../assets/sonuc.png';
+import helpDesk from '../assets/customer-support.png';
 
 const UserDashboard = () => {
   const { t } = useTranslation();
@@ -31,7 +32,7 @@ const UserDashboard = () => {
             <img
               src={aboutPng}
               alt="Tanıtım"
-              className="w-10 h-10 object-contain"
+              className="w-12 h-12 object-contain"
             />
             <span className="text-xs font-bold text-black">
               {t("about-us")}
@@ -39,7 +40,8 @@ const UserDashboard = () => {
           </Link>
 
           <a
-            href="https://randevu.medicinehospital.com.tr/appointment.php"
+            //href="https://randevu.medicinehospital.com.tr/appointment.php"
+            href="https://medicinehospital.com.tr/doktorlar/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
@@ -70,15 +72,16 @@ const UserDashboard = () => {
             </span>
           </a>
 
-          <Link to="/info" className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300">
+          <Link to="/helpdesk" className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300">
             <img
-              src={bilgiPng}
+              src={helpDesk}
               alt="Bilgi"
-              className="w-10 h-10 object-contain"
+              className="w-12 h-12 object-contain"
             />
-            <span className="text-xs font-bold text-black">
-              {t("info")}
-            </span>
+            <small className="text-xs font-bold text-black text-center ">
+              {/* {t("info")} */}
+             {t("helpDesk")}
+            </small>
           </Link>
 
           <a

@@ -9,6 +9,7 @@ import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import OrdersPage from './pages/OrdersPage'; // OrdersPage bileşenini içe aktarın
 import LoginPage from './pages/Login';
+import HelpDesk from './components/HelpDesk';
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/anketler" element={<UserSurveyList />} />
           <Route path="/tanitim" element={<Tanitim />} />
+          <Route path='/helpdesk' element={<HelpDesk />} />
           <Route path="/order" element={<ProductList />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<OrdersPage />} /> {/* OrdersPage için rota ekleyin */}
