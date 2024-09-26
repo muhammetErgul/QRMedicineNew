@@ -29,7 +29,7 @@ const HelpDesk = () => {
           <img
             src={kadin}
             alt="Kadın Görseli"
-            className="w-24 h-24 rounded-full object-contain border-4 border-white z-10 mt-1 p-1" // Görseli biraz daha aşağı kaydırmak için mt-2 eklendi
+            className="w-24 h-24 rounded-full object-contain border-2 border-white z-10 mt-1 p-1" // Görseli biraz daha aşağı kaydırmak için mt-2 eklendi
           />
 
           {/* İkonların Dairesel Yerleşimi */}
