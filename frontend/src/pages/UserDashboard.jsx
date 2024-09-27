@@ -32,7 +32,7 @@ const UserDashboard = () => {
             <img
               src={aboutPng}
               alt="Tanıtım"
-              className="w-12 h-12 object-contain"
+              className="w-14 h-14 object-contain"
             />
             <span className="text-xs font-bold text-black">
               {t("about-us")}
