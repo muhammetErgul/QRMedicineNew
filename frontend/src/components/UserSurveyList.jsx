@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaLink } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useParams, useSearchParams } from 'react-router-dom';
 
 function UserSurveyList() {
-  const [filteredSurveys, setFilteredSurveys] = useState([]);
   const { t } = useTranslation();
-  const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const { type: paramType } = useParams();
+  
+  // URL'den type'ı al (önce route params'a bak, yoksa query params'a bak)
+  const surveyType = paramType || searchParams.get('type') || 'yatan';
 
-  // Test için örnek veri
   const surveys = [
     {
       id: 31,
@@ -26,33 +28,8 @@ function UserSurveyList() {
     },
   ];
 
-  useEffect(() => {
-    // URL'den type parametresini al
-    const params = new URLSearchParams(location.search);
-    const surveyType = params.get('type');
-    
-    console.log("Current survey type:", surveyType); // Hata ayıklama için
-
-    // Anketi filtrele
-    const filtered = surveyType
-      ? surveys.filter(survey => survey.type === surveyType)
-      : surveys;
-
-    console.log("Filtered surveys:", filtered); // Hata ayıklama için
-    
-    setFilteredSurveys(filtered);
-  }, [location.search]); // location.search değiştiğinde useEffect'i tekrar çalıştır
-
-  // Eğer hiç anket yoksa bilgi mesajı göster
-  if (filteredSurveys.length === 0) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center">
-        <p className="text-lg text-gray-600">
-          Bu türde mevcut anket bulunmamaktadır.
-        </p>
-      </div>
-    );
-  }
+  // Anketleri filtrele
+  const filteredSurveys = surveys.filter(survey => survey.type === surveyType);
 
   return (
     <div className="min-h-screen flex flex-col items-center mt-8 py-8 px-4">
