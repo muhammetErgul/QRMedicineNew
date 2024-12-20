@@ -4,16 +4,18 @@ import LanguageSelector from "../translations/LanguageSelector";
 //import socialPng from "../assets/social.png";
 import appStore from "../assets/appstore.png";
 import googlePlay from "../assets/google-play.png";
-import instagram from '../assets/instagram.png';
-import twitter from '../assets/twitter.png';
-import facebook from '../assets/facebook.png';
-import youTube from '../assets/youtube.png';
-import socialMarketing from '../assets/social-marketing.png';
-import call from '../assets/phone-call.png';
-import web from '../assets/web-domain.png';
+import instagram from "../assets/instagram.png";
+import twitter from "../assets/twitter.png";
+import facebook from "../assets/facebook.png";
+import youTube from "../assets/youtube.png";
+import socialMarketing from "../assets/social-marketing.png";
+import call from "../assets/phone-call.png";
+import web from "../assets/web-domain.png";
+import { useTranslation } from "react-i18next";
 function Header() {
   // Sosyal medya menüsünü açıp kapatmak için state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { i18n } = useTranslation();
 
   // Menü açma/kapatma fonksiyonu
   const toggleMenu = () => {
@@ -34,7 +36,12 @@ function Header() {
           onClick={toggleMenu}
         >
           {/* Sosyal medya ikonu */}
-          <img src={socialMarketing} alt="Sosyal Medya" className="w-9 h-9  " style={{ filter: "invert(100%)" }} />
+          <img
+            src={socialMarketing}
+            alt="Sosyal Medya"
+            className="w-9 h-9  "
+            style={{ filter: "invert(100%)" }}
+          />
         </button>
 
         {/* Sosyal Medya Linkleri */}
@@ -117,14 +124,30 @@ function Header() {
       {/* Logo ve başlık */}
       <div className="flex flex-col items-center justify-center">
         <Link to="/" className="flex flex-col gap-2 items-center">
-          <img
-            className="w-20 "
-            src="./AtlasUniLogo1.png"
-            alt="Atlas Üniversitesi Logo"
-          />
-          <img src="./Atlas Ünv. Hastanesi Beyaz Yazı-02.png" alt=""  className="w-72 sm:w-40 md:w-48" /> 
+          {i18n.language === "tr" ? (
+            <>
+              <img
+                className="w-20"
+                src="./Atlas-Beyaz-zeminli.png"
+                alt="Atlas Üniversitesi Logo"
+              />
+              <img src="./Atlas.png" alt="" className="w-72 sm:w-40 md:w-48" />
+            </>
+          ) : (
+            <>
+              <img
+                className="w-20"
+                src="./AtlasUniLogo1.png"
+                alt="Atlas Üniversitesi Logo"
+              />
+              <img
+                src="./Atlas Ünv. Hastanesi Beyaz Yazı-02.png"
+                alt=""
+                className="w-60 sm:w-40 md:w-48"
+              />
+            </>
+          )}
         </Link>
-        
       </div>
     </header>
   );

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { IoLanguage } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 
 const langs = [
@@ -21,7 +20,7 @@ const LanguageSelector = () => {
   return (
     <div className="relative inline-block w-28 z-50">
       <div
-        className="block top-0  right-2 absolute  rounded-full   p-3 flex items-center justify-center text-gray-700  cursor-pointer transition-colors"
+        className=" top-0  right-2 absolute  rounded-full   p-3 flex items-center justify-center text-gray-700  cursor-pointer transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
         {/* <IoLanguage size={18} color="#ffff" className="font-bold "/> */}
