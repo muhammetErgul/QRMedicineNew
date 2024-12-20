@@ -46,7 +46,7 @@ function Header() {
           <div className="bg-white bg-opacity-80 py-2 px-3   rounded-lg shadow-md mt-2 ">
             <div className="grid grid-cols-1 gap-2">
               <a
-                href="https://medicinehospital.com.tr/"
+                href="https://atlasuniversitesihastanesi.com/"
                 className="hover:text-gray-400 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +54,7 @@ function Header() {
                 <img src={web} alt="Internet" className="w-6 h-6" />
               </a>
               <a
-                href="https://www.facebook.com/medicinehospital.com.tr"
+                href="https://www.facebook.com/atlasunvhastane/"
                 className="hover:text-blue-700 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,7 +62,7 @@ function Header() {
                 <img src={facebook} alt="Facebook" className="w-6 h-6" />
               </a>
               <a
-                href="https://www.instagram.com/medicinehospital/"
+                href="https://www.instagram.com/atlasunvhastane/"
                 className="hover:text-pink-300 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,7 +70,7 @@ function Header() {
                 <img src={instagram} alt="Instagram" className="w-6 h-6" />
               </a>
               <a
-                href="https://x.com/medicinehospital"
+                href="https://x.com/Atlasunvhastane"
                 className="hover:text-blue-300 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,7 +78,7 @@ function Header() {
                 <img src={twitter} alt="X" className="w-6 h-6" />
               </a>
               <a
-                href="https://www.youtube.com/@MedicineHospitalTurkey"
+                href="https://www.youtube.com/@AtlasUnvHastane"
                 className="hover:text-red-300 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"

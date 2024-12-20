@@ -9,7 +9,7 @@ function UserSurveyList() {
   const { type: paramType } = useParams();
   
   // URL'den type'ı al (önce route params'a bak, yoksa query params'a bak)
-  const surveyType = paramType || searchParams.get('type') || 'yatan';
+  const surveyType = paramType || searchParams.get('type') || 'ayaktan';
 
   const surveys = [
     {
@@ -24,7 +24,7 @@ function UserSurveyList() {
       department: "DENEME ANKETİ SİLİN",
       title: "AYAKTAN HASTA DEĞERLENDİRME ANKETİ",
       type: "ayaktan",
-      link: "http://qrlink.web.tr/0032",
+      link: "http://qrlink.web.tr/0059",
     },
   ];
 

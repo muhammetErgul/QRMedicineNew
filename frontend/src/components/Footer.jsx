@@ -4,8 +4,8 @@ import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <footer
-      className="bg-[#ffff]   py-1   w-full fixed bottom-0"
-      style={{ zIndex: 20,opacity:0.7 }}
+      className="bg-[#ffff] py-1 w-full fixed bottom-0 backdrop-blur-sm"
+      style={{ zIndex: 20, backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
     >
       <div className="max-w-screen-xl mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-center space-y-2 lg:space-y-0">
         {/* Telefon ve Email Bilgileri */}
@@ -33,10 +33,10 @@ const Footer = () => {
           <div className="flex items-center gap-1">
             <MdEmail className="text-lg text-sky-500" />
             <a
-              href="mailto:info@medicinehospital.com.tr"
+              href="mailto:hastane@atlas.edu.tr"
               className="hover:underline "
             >
-              <small className="font-bold">info@medicinehospital.com.tr</small>
+              <small className="font-bold">hastane@atlas.edu.tr</small>
             </a>
           </div>
         </div>

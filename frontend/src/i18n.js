@@ -12,23 +12,7 @@ i18n
       tr: {
         translation: {
           "tanitim-icerik": `
-            Atlas Üniversitesi Medicine Hastanesi; 1998’den beri kaliteli sağlık
-            hizmetleriyle hastalarının güvenini kazanmış, başarılı tanı ve tedavi
-            süreçleriyle birçok hastasının şifa bulmasına vesile olmuş saygın bir
-            sağlık kurumu olarak hizmetlerini devam ettirmektedir. Hastanemiz, son
-            teknoloji ile donatılmış modern binası, teknik cihaz ve
-            ekipmanlarıyla, 75.000 m2 kapalı alana sahiptir. 400 yatak kapasitesi,
-            biri hibrit olmak üzere 19 ameliyathanesi ile yılda 400 bin poliklinik
-            ve 30 binden fazla ameliyat gerçekleştirerek sunduğu hizmetlerle
-            sağlık sistemimiz içerisinde, öncü ve lider kurumlardan biri olmayı
-            başarmıştır. Ayrıca 250 kişilik konferans salonu, 3 adet dersliği ile
-            hastanemiz; yıllardır lise ve üniversite düzeyinde uygulama eğitimi ve
-            sağladığı staj olanaklarıyla 10 bini aşkın öğrencisine sağlık eğitimi
-            vererek önemli bir misyon üstlenmiştir. Güçlü bir akademik kadroya ve
-            bilimsel birikime sahip olan hastanemiz 2019 yılından itibaren “Atlas
-            Üniversitesi Medicine Hastanesi” olarak, etik tutumu ve ilkeli
-            duruşundan taviz vermeden, ülkemiz ve dünya tıbbına hizmet vermeye
-            devam edecektir.
+            Çeyrek asırlık sağlık tecrübesini kaliteli hizmet anlayışıyla birleştiren hastanemiz, modern altyapısı ve ileri teknolojik donanımıyla her yıl yüz binlerce hastaya güvenle hizmet sunmaktadır. 400 yatak kapasitesi, biri hibrit olmak üzere 19 ameliyathanesi, 75.000 m² kapalı alanı ve yıllık 400 bin poliklinik ile 30 binden fazla ameliyat kapasitesiyle sağlık sektöründe öncü bir rol üstlenmiştir.Atlas Üniversitesi ile güçlerini birleştiren hastanemiz, bilimsel birikim ve akademik desteğiyle ülkemiz ve dünya tıbbına katkı sağlamaya devam etmektedir. Ayrıca, 10 bini aşkın öğrenciye uygulama eğitimi ve staj olanağı sunarak, sağlık eğitiminin geliştirilmesinde önemli bir misyon üstlenmiştir.Atlas Üniversitesi’nin vizyonu ile birleşen hastanemiz, etik tutumu ve ilkeli duruşundan taviz vermeden, hasta odaklı hizmet anlayışıyla sağlık ve eğitim alanında bir referans noktası olmaya devam edecektir.
           `,
           "tanitim-baslik": "ATLAS ÜNİVERSİTESİ HASTANESİ",
           "footer-title": "Atlas Üniversitesi Hastanesi",
@@ -51,9 +35,7 @@ i18n
       en: {
         translation: {
         "tanitim-icerik": `
-            Atlas University Medicine Hospital; Since 1998, it has been continuing its services as a reputable health institution that has gained the trust of its patients with its quality health services and has been instrumental in healing many patients with successful diagnosis and treatment processes. Our hospital has a modern building equipped with the latest technology, technical devices and
-            has a closed area of 75,000 m2 with its equipment. With its 400 bed capacity, 19 operating rooms, one of which is hybrid, it has managed to become one of the pioneering and leading institutions in our healthcare system with the services it provides by performing 400 thousand polyclinics and more than 30 thousand surgeries annually. In addition, with its 250-seat conference hall and 3 classrooms, our hospital has been providing practical education and training at high school and university level for years.
-            has undertaken an important mission by providing health education to more than 10 thousand students with internship opportunities. Our hospital, which has a strong academic staff and scientific accumulation, will continue to serve our country and the world medicine as “Atlas University Medicine Hospital” since 2019, without compromising its ethical attitude and principled stance.
+            Combining a quarter-century of healthcare experience with an understanding of quality service, our hospital safely serves hundreds of thousands of patients every year with its modern infrastructure and advanced technological equipment. With its 400 bed capacity, 19 operating rooms, one of which is hybrid, 75,000 m² closed area, 400 thousand outpatient clinics and more than 30 thousand surgeries per year, it has assumed a leading role in the health sector. Joining forces with Atlas University, our hospital continues to contribute to our country and world medicine with its scientific knowledge and academic support. In addition, it has undertaken an important mission in the development of health education by providing practical training and internship opportunities to more than 10 thousand students. Combining with the vision of Atlas University, our hospital will continue to be a reference point in the field of health and education with its patient-oriented service approach without compromising its ethical attitude and principled stance.
           `,
           "tanitim-baslik": "ATLAS UNIVERSITY HOSPITAL",
           "footer-title": "Atlas University Hospital",
@@ -76,9 +58,7 @@ i18n
       ar: {
         translation: {
           "tanitim-icerik": `
-            مستشفى أطلس للطب الجامعي؛ منذ عام 1998، اكتسب مستشفى أطلس للطب الجامعي ثقة مرضاه بخدماته الصحية عالية الجودة، ويواصل خدماته كمؤسسة صحية مرموقة كان لها دور فعال في شفاء العديد من المرضى من خلال عمليات التشخيص والعلاج الناجحة. يحتوي مستشفانا على مبنى حديث مجهز بأحدث التقنيات والأجهزة التقنية و
-            يحتوي على مساحة مغلقة تبلغ 75,000 م2 بتجهيزاته. بسعة 400 سرير، و19 غرفة عمليات، إحداها هجينة، استطاع المستشفى أن يصبح من المؤسسات الرائدة والرائدة في نظامنا الصحي بالخدمات التي يقدمها من خلال إجراء 400 ألف عيادة متعددة التخصصات وأكثر من 30 ألف عملية جراحية سنوياً. وبالإضافة إلى ذلك، يوفر المستشفى منذ سنوات التعليم والتدريب العملي على مستوى المدارس الثانوية والجامعات من خلال قاعة مؤتمرات تتسع لـ 250 شخصًا و3 قاعات دراسية.
-            وقد اضطلع المستشفى بمهمة هامة من خلال توفير التعليم الصحي لأكثر من 10 آلاف طالب من خلال فرص التدريب التي يوفرها. سيستمر مستشفانا، الذي يتمتع بطاقم أكاديمي قوي وتراكم علمي كبير، في خدمة بلدنا والطب العالمي باسم ”مستشفى أطلس للطب الجامعي“ منذ عام 2019، دون المساس بموقفه الأخلاقي وموقفه المبدئي.
+            يقدم مستشفانا، الذي يجمع بين خبرة ربع قرن من الخبرة في مجال الصحة وفهم جودة الخدمة، خدمة آمنة لمئات الآلاف من المرضى كل عام بفضل بنيته التحتية الحديثة ومعداته التكنولوجية المتقدمة. بسعة 400 سرير، و19 غرفة عمليات، إحداها هجينة، و75,000 متر مربع من المساحة المغلقة، و400 ألف عيادة خارجية وأكثر من 30 ألف عملية جراحية سنوياً، فقد اضطلع المستشفى بدور رائد في القطاع الصحي. وبالتعاون مع جامعة أطلس، يواصل مستشفانا المساهمة في بلدنا والطب العالمي بمعرفته العلمية ودعمه الأكاديمي. بالإضافة إلى ذلك، اضطلع بمهمة هامة في تطوير التعليم الصحي من خلال توفير فرص التدريب العملي والتدريب الداخلي لأكثر من 10 آلاف طالب. سيظل مستشفانا، متحداً مع رؤية جامعة أطلس، نقطة مرجعية في مجال الصحة والتعليم من خلال نهج الخدمة الموجهة للمرضى دون المساس بموقفه الأخلاقي وموقفه المبدئي.
           `,
           "tanitim-baslik": "مستشفى أطلس الجامعي",
           "footer-title": "مستشفى أطلس الجامعي",
