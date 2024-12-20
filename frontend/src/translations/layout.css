@@ -1,0 +1,71 @@
+/* styles/layout.css */
+.bg-image {
+  background-position: center;
+}
+
+/* iPhone 11 (828 x 1792) */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .bg-image {
+    background-position: center -45px;
+  }
+}
+
+/* iPhone 12 & 13 mini (1080 x 2340) */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .bg-image {
+    background-position: center -40px;
+  }
+}
+
+/* iPhone 12 & 13 (1170 x 2532) */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .bg-image {
+    background-position: center -45px;
+  }
+}
+
+/* iPhone 12 & 13 Pro Max (1284 x 2778) */
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .bg-image {
+    background-position: center -50px;
+  }
+}
+
+/* iPhone 14 (1170 x 2532) */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .bg-image {
+    background-position: center -45px;
+  }
+}
+
+/* iPhone 14 Plus & Pro Max (1290 x 2796) */
+@media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+  .bg-image {
+    background-position: center -50px;
+  }
+}
+
+/* Genel breakpoint'ler */
+@media (min-width: 640px) {
+  .bg-image {
+    background-position: center -53px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-image {
+    background-position: center -70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-image {
+    background-position: center -90px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bg-image {
+    background-position: center -120px;
+  }
+}

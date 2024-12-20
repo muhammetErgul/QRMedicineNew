@@ -4,7 +4,7 @@ import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <footer
-      className="bg-[#ffff] py-1 w-full fixed bottom-0 backdrop-blur-sm"
+      className="bg-[#ffff] py-1 w-full   fixed bottom-0 backdrop-blur-sm"
       style={{ zIndex: 20, backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
     >
       <div className="max-w-screen-xl mx-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-center space-y-2 lg:space-y-0">
