@@ -127,23 +127,23 @@ function Header() {
           {i18n.language === "tr" ? (
             <>
               <img
-                className="w-20"
+                className="w-20 h-20 object-contain"
                 src="./Atlas-Beyaz-zeminli.png"
                 alt="Atlas Üniversitesi Logo"
               />
-              <img src="./Atlas.png" alt="" className="w-72 sm:w-40 md:w-48" />
+              <img src="./Atlas.png" alt="" className="w-48 object-contain" />
             </>
           ) : (
             <>
               <img
-                className="w-20"
+                className="w-20 h-20 object-contain"
                 src="./AtlasUniLogo1.png"
                 alt="Atlas Üniversitesi Logo"
               />
               <img
                 src="./Atlas Ünv. Hastanesi Beyaz Yazı-02.png"
                 alt=""
-                className="w-60 sm:w-40 md:w-48"
+                className="w-48 object-contain"
               />
             </>
           )}
