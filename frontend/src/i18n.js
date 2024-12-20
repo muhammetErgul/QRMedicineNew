@@ -30,6 +30,7 @@ i18n
           "staff":"Personel",
           "temizlik": "Temizlik",
           "teknik": "Teknik",
+          "anketTitle": "Değerlendirme Anketi",
         },
       },
       en: {
@@ -53,6 +54,7 @@ i18n
         "staff":"Personnel",
         "temizlik": "Cleaning",
         "teknik": "Technical",
+        "anketTitle": "Evaluation Survey",
         },
       },
       ar: {
@@ -76,6 +78,7 @@ i18n
         "staff":"الموظفون",
         "temizlik": "التنظيف",
         "teknik": "التقني",
+        "anketTitle": "استبيان التقييم",
         },
       },
     },

@@ -118,11 +118,11 @@ function Header() {
       <div className="flex flex-col items-center justify-center">
         <Link to="/" className="flex flex-col gap-2 items-center">
           <img
-            className="w-20 h-20  "
-            src="./Atlas-Beyaz-zeminli.png"
+            className="w-20 "
+            src="./AtlasUniLogo1.png"
             alt="Atlas Üniversitesi Logo"
           />
-          <img src="./Atlas.png" alt=""   /> 
+          <img src="./Atlas Ünv. Hastanesi Beyaz Yazı-02.png" alt=""  className="w-72 sm:w-40 md:w-48" /> 
         </Link>
         
       </div>

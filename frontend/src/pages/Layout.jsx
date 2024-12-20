@@ -7,11 +7,11 @@ const Layout = ({ children }) => {
     <div className="relative flex flex-col min-h-screen">
       {/* Arka plan resmi ekranı tam olarak kaplayacak */}
       <div
-        className="fixed inset-0 bg-[url('/atlasUni1.jpg')] bg-cover z-0"
+        className="fixed inset-0 bg-[url('/atlasUni2.jpg')] bg-cover z-0 no-repeat"
         style={{
           width: "100%",
           height: "100vh",
-          backgroundPosition: "center -23px",
+          backgroundPositionY: " -40px ",
         }}
       ></div>
 

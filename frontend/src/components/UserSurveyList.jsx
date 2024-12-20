@@ -15,14 +15,14 @@ function UserSurveyList() {
     {
       id: 31,
       department: "DENEME ANKETİ SİLİN",
-      title: "YATAN HASTA DEĞERLENDİRME ANKETİ",
+      title: "DEĞERLENDİRME ANKETİ",
       type: "yatan",
       link: "http://qrlink.web.tr/0031",
     },
     {
       id: 32,
       department: "DENEME ANKETİ SİLİN",
-      title: "AYAKTAN HASTA DEĞERLENDİRME ANKETİ",
+      title: "DEĞERLENDİRME ANKETİ",
       type: "ayaktan",
       link: "http://qrlink.web.tr/0059",
     },
@@ -54,7 +54,7 @@ function UserSurveyList() {
                     className="text-blue-500 hover:text-blue-700 flex justify-center items-center"
                   >
                     <FaLink size={24} className="mr-2" />
-                    <span>{survey.title}</span>
+                    <span>{t("anketTitle")}</span>
                   </a>
                 </td>
               </tr>
