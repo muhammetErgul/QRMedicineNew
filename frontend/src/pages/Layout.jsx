@@ -4,28 +4,23 @@ import AutoSignOut from "../components/AutoSignOut";
 
 const Layout = ({ children }) => {
   return (
-    <div className="relative flex flex-col ">
-      {/* Arka plan resmi ekranı tam olarak kaplayacak */}
+    <div className="relative flex flex-col min-h-screen overflow-hidden">
+      {/* Background image with adjusted position */}
       <div
-        className="fixed inset-0 bg-[url('/atlasUni2-min.jpg')] bg-cover z-0 no-repeat sm:bg-[position:center_-50px] 
-          md:bg-[position:center_-100px] 
-          lg:bg-[position:center_-150px] 
-          xl:bg-[position:center_-200px] 
-          2xl:bg-[position:center_-250px]"
+        className="fixed inset-0 bg-[url('/atlasUni2-min.jpg')] bg-cover bg-center z-0 no-repeat"
         style={{
           width: "100%",
-          height: "94vh",
+          height: "100vh",
+          backgroundPosition: "center 400%" // This will move the image up
         }}
       ></div>
 
-      {/* İçerik ve şeffaf arkaplan overlay */}
-      <div className="relative flex flex-col min-h-screen">
+      {/* Content and transparent background overlay */}
+      <div className="relative flex flex-col flex-grow">
         <div className="flex-grow z-10 bg-black/5">
           <Header />
           <AutoSignOut />
-          <main className="pb-16">
-            {" "}
-            {/* Footer'ın yüksekliği kadar padding-bottom */}
+          <main className="pb-20"> {/* Increased padding for larger footer */}
             {children}
           </main>
         </div>

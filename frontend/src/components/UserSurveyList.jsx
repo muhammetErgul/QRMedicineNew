@@ -32,7 +32,7 @@ function UserSurveyList() {
   const filteredSurveys = surveys.filter(survey => survey.type === surveyType);
 
   return (
-    <div className="min-h-screen flex flex-col items-center mt-8 py-8 px-4">
+    <div className="h-full flex flex-col items-center mt-8 py-8 px-4">
       <div className="w-full max-w-4xl overflow-x-auto">
         <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
           <thead className="bg-[#0A568C] text-white">
