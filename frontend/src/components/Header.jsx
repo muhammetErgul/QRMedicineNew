@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LanguageSelector from "../translations/LanguageSelector";
 //import socialPng from "../assets/social.png";
@@ -12,6 +11,8 @@ import socialMarketing from "../assets/social-marketing.png";
 import call from "../assets/phone-call.png";
 import web from "../assets/web-domain.png";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
 function Header() {
   // Sosyal medya menüsünü açıp kapatmak için state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ function Header() {
       </div>
 
       {/* Sosyal Medya Menü Butonu */}
-      <div className="absolute top-5 left-1 z-50">
+      <div className="absolute top-5 left-1 md:left-8 z-50">
         <button
           className="p-2  rounded-full focus:outline-none"
           onClick={toggleMenu}
@@ -46,12 +47,12 @@ function Header() {
 
         {/* Sosyal Medya Linkleri */}
         <div
-          className={`transition-all duration-500 ease-in-out  ${
+          className={`transition-all duration-500 ease-in-out ${
             isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           } overflow-hidden`}
         >
-          <div className="bg-white bg-opacity-80 py-2 px-3   rounded-lg shadow-md mt-2 ">
-            <div className="grid grid-cols-1 gap-2">
+          <div className="bg-white bg-opacity-80 md:bg-opacity-95 py-2 px-3 rounded-lg shadow-md mt-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4">
               <a
                 href="https://atlasuniversitesihastanesi.com/"
                 className="hover:text-gray-400 transition-colors duration-300"
@@ -122,29 +123,37 @@ function Header() {
       </div>
 
       {/* Logo ve başlık */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center min-h-[120px] md:min-h-[160px]">
         <Link to="/" className="flex flex-col gap-2 items-center">
           {i18n.language === "tr" ? (
             <>
-              <img
-                className="w-20 h-20 object-contain"
-                src="./Atlas-Beyaz-zeminli.png"
-                alt="Atlas Üniversitesi Logo"
-              />
-              <img src="./Atlas.png" alt="" className="w-48 object-contain" />
+              <div className="w-20 h-20 md:w-32 md:h-32 flex items-center justify-center">
+                <img
+                  className="w-full h-full object-contain"
+                  src="./Atlas-Beyaz-zeminli.png"
+                  alt="Atlas Üniversitesi Logo"
+                />
+              </div>
+              <div className="w-48 md:w-64 h-12 flex items-center justify-center">
+                <img src="./Atlas.png" alt="" className="w-full object-contain" />
+              </div>
             </>
           ) : (
             <>
-              <img
-                className="w-20 h-20 object-contain"
-                src="./AtlasUniLogo1.png"
-                alt="Atlas Üniversitesi Logo"
-              />
-              <img
-                src="./Atlas Ünv. Hastanesi Beyaz Yazı-02.png"
-                alt=""
-                className="w-48 object-contain"
-              />
+              <div className="w-20 h-20 md:w-32 md:h-32 flex items-center justify-center">
+                <img
+                  className="w-full h-full object-contain"
+                  src="./AtlasUniLogo1.png"
+                  alt="Atlas Üniversitesi Logo"
+                />
+              </div>
+              <div className="w-48 md:w-64 h-12 flex items-center justify-center">
+                <img
+                  src="./Atlas Ünv. Hastanesi Beyaz Yazı-02.png"
+                  alt=""
+                  className="w-full object-contain"
+                />
+              </div>
             </>
           )}
         </Link>

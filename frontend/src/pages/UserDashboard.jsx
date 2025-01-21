@@ -15,50 +15,55 @@ const UserDashboard = () => {
   return (
     <div className="relative flex flex-col mt-3">
       {/* Main Content */}
-      <div className="relative flex-grow container mx-auto px-12">
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center font-libre">
-          {/* Kart boyutları küçültüldü */}
+      <div className="relative flex-grow container mx-auto px-4 md:px-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 justify-items-center font-libre">
+          {/* Kartlar için sabit boyutlar */}
           <Link
             to={type ? `/anketler?type=${type}` : "/anketler"}
-            className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
+            className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
           >
-            <img
-              src={anketPng}
-              className="w-10 h-10 object-contain ml-1"
-              alt="Anket"
-            />
-            <span className="text-xs font-bold text-black">
+            <div className="h-12 md:h-20 flex items-center justify-center">
+              <img
+                src={anketPng}
+                className="w-8 h-8 md:w-16 md:h-16 object-contain"
+                alt="Anket"
+              />
+            </div>
+            <span className="text-xs md:text-base font-bold text-black text-center h-6 md:h-8 flex items-center">
               {t("survey-page")}
             </span>
           </Link>
 
           <Link
             to="/tanitim"
-            className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
+            className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
           >
-            <img
-              src={aboutPng}
-              alt="Tanıtım"
-              className="w-14 h-14 object-contain"
-            />
-            <span className="text-xs font-bold text-black">
+            <div className="h-12 md:h-20 flex items-center justify-center">
+              <img
+                src={aboutPng}
+                alt="Tanıtım"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <span className="text-xs md:text-base font-bold text-black text-center h-6 md:h-8 flex items-center">
               {t("about-us")}
             </span>
           </Link>
 
           <a
-            //href="https://randevu.medicinehospital.com.tr/appointment.php"
             href="https://medicinehospital.com.tr/doktorlar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
+            className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
           >
-            <img
-              src={randevuPng}
-              alt="Randevu"
-              className="w-10 h-10 object-contain"
-            />
-            <span className="text-xs font-bold text-black">
+            <div className="h-12 md:h-20 flex items-center justify-center">
+              <img
+                src={randevuPng}
+                alt="Randevu"
+                className="w-8 h-8 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <span className="text-xs md:text-base font-bold text-black text-center h-6 md:h-8 flex items-center">
               {t("appointment")}
             </span>
           </a>
@@ -67,43 +72,50 @@ const UserDashboard = () => {
             href="https://tetkik.medicinehospital.com.tr/patient_information.php"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
+            className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
           >
-            <img
-              src={sonucPng}
-              alt="Sonuç"
-              className="w-10 h-10 object-contain"
-            />
-            <span className="text-xs font-bold text-black">{t("sonuc")}</span>
+            <div className="h-12 md:h-20 flex items-center justify-center">
+              <img
+                src={sonucPng}
+                alt="Sonuç"
+                className="w-8 h-8 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <span className="text-xs md:text-base font-bold text-black text-center h-6 md:h-8 flex items-center">
+              {t("sonuc")}
+            </span>
           </a>
 
           <Link
             to="/helpdesk"
-            className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
+            className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
           >
-            <img
-              src={helpDesk}
-              alt="Bilgi"
-              className="w-12 h-12 object-contain"
-            />
-            <small className="text-xs font-bold text-black text-center ">
-              {/* {t("info")} */}
+            <div className="h-12 md:h-20 flex items-center justify-center">
+              <img
+                src={helpDesk}
+                alt="Bilgi"
+                className="w-8 h-8 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <span className="text-xs md:text-base font-bold text-black text-center h-6 md:h-8 flex items-center">
               {t("helpDesk")}
-            </small>
+            </span>
           </Link>
 
           <a
             href="https://menu.myqrcodemenu.com/menu/foodz-cafe--df8995"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center w-24 h-20 gap-1 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
+            className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
           >
-            <img
-              src={siparisPng}
-              alt="Sipariş"
-              className="w-10 h-10 object-contain"
-            />
-            <span className="text-xs font-bold text-black">
+            <div className="h-12 md:h-20 flex items-center justify-center">
+              <img
+                src={siparisPng}
+                alt="Sipariş"
+                className="w-8 h-8 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <span className="text-xs md:text-base font-bold text-black text-center h-6 md:h-8 flex items-center">
               {t("order-screen")}
             </span>
           </a>
