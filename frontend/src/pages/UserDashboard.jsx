@@ -51,7 +51,7 @@ const UserDashboard = () => {
           </Link>
 
           <a
-            href="https://medicinehospital.com.tr/doktorlar/"
+            href="https://atlasuniversitesihastanesi.com/doktorlar/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
@@ -69,7 +69,7 @@ const UserDashboard = () => {
           </a>
 
           <a
-            href="https://tetkik.medicinehospital.com.tr/patient_information.php"
+            href="https://online.atlasuniversitesihastanesi.com/labsonuc/patient_information.php"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center w-24 h-24 md:w-40 md:h-40 gap-1 md:gap-2 p-2 bg-white bg-opacity-50 rounded-lg shadow-md transition duration-300"
