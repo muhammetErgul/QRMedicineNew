@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="flex items-center gap-1">
               <MdPhone className="text-lg text-sky-500" />
               <a href="tel:4440205" className="hover:underline">
-                <small className="font-bold">444 0205</small>
+                <small className="font-bold">444 3439</small>
               </a>
             </div>
             <div className="flex items-center gap-1">

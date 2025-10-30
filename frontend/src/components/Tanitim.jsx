@@ -10,7 +10,7 @@ const Tanitim = () => {
           <div className="relative w-full h-0 pb-[56.25%] md:rounded-lg overflow-hidden shadow-md">
             <iframe
               className="absolute inset-0 w-full h-full rounded-t-md md:rounded-lg"
-              src="https://www.youtube.com/embed/Y7FvHzZ9sKU?si=sXhqb8SUNWSaDKeN"
+              src="https://www.youtube.com/watch?v=WniUSOq3tZg"
               title="Medicine Hospital Tanitim Filmi"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
