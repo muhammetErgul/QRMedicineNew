@@ -10,7 +10,7 @@ const Tanitim = () => {
           <div className="relative w-full h-0 pb-[56.25%] md:rounded-lg overflow-hidden shadow-md">
             <iframe
               className="absolute inset-0 w-full h-full rounded-t-md md:rounded-lg"
-              src="https://youtu.be/WniUSOq3tZg"
+              src="https://www.youtube.com/embed/WniUSOq3tZg?si=Hiy9VKqX9LyNrsbL"
               title="Atlas Üniversitesi Hastanesi Tanitim Filmi"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
