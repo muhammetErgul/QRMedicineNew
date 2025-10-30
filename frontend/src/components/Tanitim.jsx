@@ -19,7 +19,8 @@ const Tanitim = () => {
             ></iframe> */}
             <iframe
               className="absolute inset-0 w-full h-full rounded-t-md md:rounded-lg"
-              src="https://www.youtube-nocookie.com/embed/WniUSOq3tZg?si=U-F42_hvLp8lE8sV&amp;start=1"
+              /*src="https://www.youtube-nocookie.com/embed/WniUSOq3tZg?si=U-F42_hvLp8lE8sV&amp;start=1"*/
+              src="https://www.youtube-nocookie.com/embed/WniUSOq3tZg?si=U-F42_hvLp8lE8sV&start=1&modestbranding=1&rel=0&showinfo=0&controls=1"
               title="Atlas Üniversitesi Hastanesi Tanitim Filmi"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
