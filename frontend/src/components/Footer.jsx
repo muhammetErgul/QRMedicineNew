@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="flex items-center gap-6 text-xs">
             <div className="flex items-center gap-1">
               <MdPhone className="text-lg text-sky-500" />
-              <a href="tel:4440205" className="hover:underline">
+              <a href="tel:4443439" className="hover:underline">
                 <small className="font-bold">444 3439</small>
               </a>
             </div>
@@ -71,8 +71,8 @@ const Footer = () => {
               <div className="flex items-center gap-8 text-white">
                 <div className="flex items-center gap-2 group">
                   <MdPhone className="text-2xl text-sky-300 group-hover:text-sky-400 transition-colors" />
-                  <a href="tel:4440205" className="hover:text-sky-400 transition-colors">
-                    444 0205
+                  <a href="tel:4443439" className="hover:text-sky-400 transition-colors">
+                    444 3439
                   </a>
                 </div>
                 <div className="flex items-center gap-2 group">
