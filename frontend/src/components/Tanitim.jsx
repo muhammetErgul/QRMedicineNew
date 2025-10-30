@@ -8,7 +8,7 @@ const Tanitim = () => {
         {/* Video Bölümü */}
         <div className="flex-1 w-full">
           <div className="relative w-full h-0 pb-[56.25%] md:rounded-lg overflow-hidden shadow-md">
-            <iframe
+            {/* <iframe
               className="absolute inset-0 w-full h-full rounded-t-md md:rounded-lg"
               src="https://www.youtube.com/embed/WniUSOq3tZg?si=Hiy9VKqX9LyNrsbL"
               title="Atlas Üniversitesi Hastanesi Tanitim Filmi"
@@ -16,6 +16,15 @@ const Tanitim = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
+            ></iframe> */}
+            <iframe
+              className="absolute inset-0 w-full h-full rounded-t-md md:rounded-lg"
+              src="https://www.youtube-nocookie.com/embed/WniUSOq3tZg?si=U-F42_hvLp8lE8sV&amp;start=1"
+              title="Atlas Üniversitesi Hastanesi Tanitim Filmi"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
           </div>
         </div>
